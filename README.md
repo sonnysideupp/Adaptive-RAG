@@ -17,7 +17,7 @@ Then I loaded the TXT file into memory, split the text into chunks of 500 tokens
 
 Below is the architecture of the Adpative RAG graph:
 
-<img src='/assets/rag_graph.png' width=800>
+<img src='/assets/rag_graph.png' >
 
 When a user asks a question, the query analyzer will analyze the question and then route it to the appropriate data source. If the question is related to Lyft, it will route to the vector DB. Otherwise it will route to web search. If the query analyzer fails to create a classification LLM will be used as a default. 
 
