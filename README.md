@@ -29,12 +29,12 @@ Then all the relevant documents will be combined to generate a coherent answer t
 
 Below is the result for when the user asks: 'In what areas is Lyft looking to innovate in the future?'. The RAG correctly routes the question to the vector DB and fetches the relevant documents to formulate the answer to the user question. 
 
-<img src='/assets/lyft_innovation_example.png' width=800>
+<img src='/assets/lyft_innovation_example.png'>
 
 Below is the result for when the user asks: '"What is Lyft's market share in the US?'. The RAG routes the question to the vector DB but all the fetched documents are not relevant to the question (information doesn't exist in the 10-K document). As a result, web search is used as a backup to retrieve the relevant answer. 
 
-<img src='/assets/lyft_market_share_example.png' width=800>
+<img src='/assets/lyft_market_share_example.png'>
 
 Lastly, when a user ask a question that is not related to Lyft. It will route to the web to fetch the answer. 
 
-<img src='/assets/irrelevant_question.png' width=800>
+<img src='/assets/irrelevant_question.png'>
