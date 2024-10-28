@@ -4,12 +4,12 @@
 Adaptive RAG is a RAG strategy that combines query analysis with self-corrective RAG. 
 
 
-I built an Adaptive RAG using LangGraph and Open AI GPT LLM to analyze Lyft's 2013 fiscal year 10-K financial document and answer users' questions regarding the information inside the 10-K document.
+I built an Adaptive RAG using LangGraph and Open AI GPT LLM to analyze Lyft's 2023 fiscal year 10-K financial document and answer users' questions regarding the information inside the 10-K document.
 
 
 # Data Processing
 
-In the data processing phase, I downloaded Lyft's 2013 10-K PDF file, formatted it, and saved to disk as a plain TXT file. 
+In the data processing phase, I downloaded Lyft's 2023 10-K PDF file, formatted it, and saved to disk as a plain TXT file. 
 
 Then I loaded the TXT file into memory, split the text into chunks of 500 tokens, and then embedded the chunks using Open AI's text embedding to Chroma vector DB. 
 
